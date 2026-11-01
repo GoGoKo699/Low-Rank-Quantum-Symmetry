@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 7,
+      "source_sha256": "b792bf64c45b73f477e03b0d36725f95067014b2ba80df91bad649cd36123230",
+      "expected_text": "O~(r12ε−10L2)"
+    },
+    {
+      "path": "README.md",
+      "index": 8,
+      "source_sha256": "d80490bbfb5e6c36a4ced11f492fbc751fef83c58ce97e49567938e662b80107",
+      "expected_text": "O(rε−2L)"
+    },
+    {
+      "path": "README.md",
+      "index": 9,
+      "source_sha256": "2091129ba5c02f24c4a0cf8082c87ba8f73810f693363f6c741250fd6c0c0c46",
+      "expected_text": "O(r⌈log2⁡d⌉+L+log⁡(r/ε))"
+    },
+    {
+      "path": "references/related_work.md",
+      "index": 5,
+      "source_sha256": "d90d9d6e0265f7eb84361c9bf6f43d4c1bc6dbef8fe0d6b79a605165fb0abd7a",
+      "expected_text": "Tr(R(h)ρ)=1"
+    },
+    {
+      "path": "references/related_work.md",
+      "index": 6,
+      "source_sha256": "8f59f3aa212202790eeff7915a82bbf3698d7e541f510eb3377f3e0681a2086d",
+      "expected_text": "|Tr(R(g)ρ)|=1"
+    },
+    {
+      "path": "references/related_work.md",
+      "index": 8,
+      "source_sha256": "33aaa083e4748630e8d6d11db7d6ddd017d8c07e91994df8fec8268bf9e7653a",
+      "expected_text": "|Tr(R(g)ρ)|2"
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 100,
+      "source_sha256": "c62821549499dc9db0d4afb39e4230fa991ae70a5698df060b8400a2b3ee70bb",
+      "expected_text": "AdeiΔHc"
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 106,
+      "source_sha256": "3a1fec17efc237295e7d0f30f83f03e8cbbfa382b13f08e09fcd9e053c4e29b4",
+      "expected_text": "Δ⋄(U~t,AdeitHc)≤4t2/n."
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 122,
+      "source_sha256": "20c991448f570355986558d2860392c3138079787e3c840cec431334db5e8dda",
+      "expected_text": "pj=Tr(Pjρ)≥w."
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 139,
+      "source_sha256": "4408d2c14a55570aeb2088b21d1f5a6e945c67d0d528f662bd2a87b6e50a2b62",
+      "expected_text": "Ak=1k+1(I−∑i=1kSWAPi,k+1)."
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 144,
+      "source_sha256": "69e0eb977584b786503e6e46f9102ee25b213d18e52bb70b69f1da910e9ca3c4",
+      "expected_text": "SELECTk"
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 145,
+      "source_sha256": "cd9a655dba501213b4bafb77882e5a85f553e5a56a9f9a203e52beb3b98e44db",
+      "expected_text": "−SWAPi,k+1"
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 147,
+      "source_sha256": "2fce8d6a1dfdcb6cb2f4e67a7c370a87942af4b70f38844cb69739badf9314f6",
+      "expected_text": "Bk=(Wk†⊗I)SELECTk(Wk⊗I)."
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 154,
+      "source_sha256": "98c8e4334ace12a55b3c4573f18ed28b368069fe604e14292b4c4c325bf30760",
+      "expected_text": "rangeΠk"
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 163,
+      "source_sha256": "69e0eb977584b786503e6e46f9102ee25b213d18e52bb70b69f1da910e9ca3c4",
+      "expected_text": "SELECTk"
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 168,
+      "source_sha256": "6cbb9d0c47f627c9a04e921e239cd54c2f19aac86872d0c63283bffe55d890a9",
+      "expected_text": "V=rangePj"
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 174,
+      "source_sha256": "c82d7ee2537ce37fb08d621269fe9742b0bf6211bb2c9d13cabeeb5eafc3fe93",
+      "expected_text": "Pr(growth)=Tr[(ω⊗τj)Πk+1]≥wrj−kk+1≥wr+1."
+    },
+    {
+      "path": "science/copy_algorithm.md",
+      "index": 177,
+      "source_sha256": "b6d7f2c3d4a9b269b58931551f2c0aefc9a040f343cec931109a4d5ab4e6fbec",
+      "expected_text": "Trk+1Πk+1V=rj−kk+1ΠkV."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 8,
+      "source_sha256": "8edc0f3c88673dca634b58cda33c1057520b4e7ea759f7c4666db5da550603e4",
+      "expected_text": "ρη−XρηX=diag(2η,−2η),D(ρη,XρηX)=2η."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 28,
+      "source_sha256": "87ed39f0ad00eaad1ed5887afea1df13f2e14ecb212c2878a397baa147ebcc78",
+      "expected_text": "ZρZ=ρ,Tr(Zρ)=0."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 30,
+      "source_sha256": "22aadd40a78f77703db1489cedbf9d2607cd103552bcacf04fe9e36a53cffb0c",
+      "expected_text": "Tr(R(g)ρ)=1"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 31,
+      "source_sha256": "8f59f3aa212202790eeff7915a82bbf3698d7e541f510eb3377f3e0681a2086d",
+      "expected_text": "|Tr(R(g)ρ)|=1"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 32,
+      "source_sha256": "8b20c6e3cd419e8ddddff697516c0fca69b7563ee79e340335ffd5474f7c1265",
+      "expected_text": "|Tr(Uρ)|=1"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 46,
+      "source_sha256": "b5deeb03d9ddd1418e80959f9eb3f6fe86fc8badd8c41384fa35cfa1352d7f2d",
+      "expected_text": "AdU(X)=UXU†"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 47,
+      "source_sha256": "110d1e6c598afe01077e23f7e4e5237366c0507d2844116f9f71c746db3696e3",
+      "expected_text": "Hcov={g∈G:E∘AdUA(g)=AdVB(g)∘E}."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 48,
+      "source_sha256": "3a298827a6e3de9cd30213e8c1dc6222cde5ea50095b57be5e2fe24ebf7abbcb",
+      "expected_text": "JE=(idA′⊗E)(|ΦA⟩⟨ΦA|),|ΦA⟩=1dA∑i=0dA−1|i⟩A′|i⟩A."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 58,
+      "source_sha256": "b31a631b6c1f21578cf7f92cfa70eb975e5c900a474fe89878d420800ec05ce7",
+      "expected_text": "JΦ∘AdU†=(U―⊗I)JΦ(UT⊗I)."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 59,
+      "source_sha256": "363368bf8591cd7a92c874d3bb3be22123e1262a712e24c143a3d49878680620",
+      "expected_text": "RChoi(g)JERChoi(g)†=JAdVB(g)∘E∘AdUA(g)†."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 60,
+      "source_sha256": "4e9f2669f7511ef4979aba8b5ce3d2bda79f6f0ff066e4f19409f475286dc0f3",
+      "expected_text": "E(X)=dATrA′[(XT⊗I)JE]."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 61,
+      "source_sha256": "3006de8e7002169a9dc2342fd6ed3c150dac3a24d99c7aa2d81273a6b630b94a",
+      "expected_text": "AdVB(g)∘E∘AdUA(g)†=E,"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 62,
+      "source_sha256": "a391d61b449f3e44946b34cbb7c5fa53b272a2e2be64a79ede2944031e471028",
+      "expected_text": "AdUA(g)"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 63,
+      "source_sha256": "a705e72c0856a4aadd51b6665ccf1b6686cd24808b1035622c459e7dc5f795ce",
+      "expected_text": "D(JE,RChoi(g)JERChoi(g)†)=D(JE∘AdUA(g),JAdVB(g)∘E)."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 66,
+      "source_sha256": "01e9e9e267375a06db0730ee682b9a670887f59a5863d4ddfd6a84b24d28fd71",
+      "expected_text": "rank(JE)"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 75,
+      "source_sha256": "c0daba49aca520111c37c9de63a3ec690031d9442fd454e05abe3668d61a920e",
+      "expected_text": "Ep=(1−p)id+pAdX,0<p<1,"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 77,
+      "source_sha256": "d1e7ee969030ba656893d2336856de58f613195d8eb8dfe5e50ce7f4362423b9",
+      "expected_text": "U(g)=V(g)=diag(1,ig)"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 91,
+      "source_sha256": "94765a8f2e60da9031b62fd6a0893a1fed7bf7f583a18b48f7b81596b09fb20f",
+      "expected_text": "Tr(RChoi(2)JEp)=1−2p,"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 99,
+      "source_sha256": "1e3b6e40dedf7ca863d4d385fdbb2491b1ed0a00ed4d277ff65c238db58571e9",
+      "expected_text": "E=AdW0"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 100,
+      "source_sha256": "e62d5f01cff9f2acdba7e3efd87844f8ed4f7d7dbb66d02fa8e281d5fb1ca979",
+      "expected_text": "AdW1"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 102,
+      "source_sha256": "da8adf63eb193287e19a8ee824a15ec546eeb5ecd8f9466d16d1e99d94ed93ce",
+      "expected_text": "Tr(W0†W1)d=1−4d."
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 105,
+      "source_sha256": "e453b198ff96e94cf4669f33182e0631877f055da3431e7c54f9bf08192e99fa",
+      "expected_text": "E∘AdS"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 106,
+      "source_sha256": "25d46f6c29b23d466293a2f0887ae2269efae658f29201e4ed5d0163d90d4649",
+      "expected_text": "AdS∘E"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 113,
+      "source_sha256": "15040bf03857ff4010b18e49491baf814efe92347ade0a4ad46853bfe14184b3",
+      "expected_text": "rank(ωτ)≤2s"
+    },
+    {
+      "path": "science/examples_and_channels.md",
+      "index": 128,
+      "source_sha256": "fa8f508bdf73efaca2198a441fd3762e9e931ec968d0138fd491d978c5d63a3a",
+      "expected_text": "R(k)=diag(1,e2πik/N)"
+    },
+    {
+      "path": "science/interpretation.md",
+      "index": 1,
+      "source_sha256": "8d46ec7e73b52184afadd0590d7578395a60195e8efd59e46d38e8f2e5713f5e",
+      "expected_text": "Tr(ρR(g))"
+    },
+    {
+      "path": "science/interpretation.md",
+      "index": 5,
+      "source_sha256": "e55cab30f68393a6a601602a50323c82aef6ee180ec134f55d1f3323cc52aa49",
+      "expected_text": "|∧P⟩=1k!∑π∈Sksgn(π)|vπ(1)⟩⊗⋯⊗|vπ(k)⟩."
+    },
+    {
+      "path": "science/model.md",
+      "index": 6,
+      "source_sha256": "f1fa7a7a4393ef4eae19daaaa1bc067441b5d879ab1beac2ce14f661c8e10bb6",
+      "expected_text": "rankρ≤r"
+    },
+    {
+      "path": "science/model.md",
+      "index": 10,
+      "source_sha256": "82e3b14283a4b8b3378765ff98c2220b712d992d47e92543ed4beed178420eac",
+      "expected_text": "CR=∑g|g⟩⟨g|⊗R(g)"
+    },
+    {
+      "path": "science/model.md",
+      "index": 18,
+      "source_sha256": "c9cf1ea178362444fa45ad19a52d0a6389acfeb030de22325c382dced223ba92",
+      "expected_text": "Hρ={g∈G:R(g)ρR(g)†=ρ}."
+    },
+    {
+      "path": "science/model.md",
+      "index": 21,
+      "source_sha256": "5cbf5fe781e3dddfc16b71ea1307c53653e6d5882dc504243e1e3f9842913797",
+      "expected_text": "∀g∈G,D(ρ,R(g)ρR(g)†)∈{0}∪[ε,1]."
+    },
+    {
+      "path": "science/model.md",
+      "index": 34,
+      "source_sha256": "96962e171cd0d3f1971922da5f49e309a29ae2526f753e5ef723fc21fa9a1a18",
+      "expected_text": "N=O~(r12ε−10L2)"
+    },
+    {
+      "path": "science/model.md",
+      "index": 38,
+      "source_sha256": "406f341cf5d734260d0454a6c13f19767b5dfcf101de82f5438be18422fd8b42",
+      "expected_text": "O(rn+L+log⁡(r/ε)),"
+    },
+    {
+      "path": "science/spectral_reduction.md",
+      "index": 4,
+      "source_sha256": "f1fa7a7a4393ef4eae19daaaa1bc067441b5d879ab1beac2ce14f661c8e10bb6",
+      "expected_text": "rankρ≤r"
+    },
+    {
+      "path": "science/spectral_reduction.md",
+      "index": 25,
+      "source_sha256": "425ee471bf1f3d13636a5fe5eab2510272aeeef78096ccf5456e7cff23f06077",
+      "expected_text": "rj=rankPj,bj=u+(j+12)w,A=∑jbjPj,s=TrA,σ=A/s."
+    },
+    {
+      "path": "science/spectral_reduction.md",
+      "index": 54,
+      "source_sha256": "cad3d41587216e6f326303ad241223e134b355f5236fe854b0cf43632a1d633a",
+      "expected_text": "|∧P⟩=1k!∑π∈Sksgn(π)|vπ(1)⟩⊗⋯⊗|vπ(k)⟩."
+    },
+    {
+      "path": "science/spectral_reduction.md",
+      "index": 59,
+      "source_sha256": "1662345645a29c327c721df97e9bd35385b33b2ffc1ab00be0a6d3725bf55708",
+      "expected_text": "rangeP"
+    },
+    {
+      "path": "science/spectral_reduction.md",
+      "index": 60,
+      "source_sha256": "93062d389392d25c2a50130fe2f8641a848cd4b9f5ac5a373bd01faa1ecbb5c0",
+      "expected_text": "UrangeP"
+    },
+    {
+      "path": "science/spectral_reduction.md",
+      "index": 138,
+      "source_sha256": "a29dedffd339270eb61064f27217fcf7bad5102f3c4c30c102d3496675bb3538",
+      "expected_text": "1−2t≤ReEqχ(g)=|⟨W|R(g)|W⟩|2≤1−ε2/8,"
+    },
+    {
+      "path": "science/spectral_reduction.md",
+      "index": 152,
+      "source_sha256": "fe4d9eb58676a7811cb9c0d32588ba8f053d60d44e7b90988f53fbf264f4066a",
+      "expected_text": "Pr{Bin(m,γ)<L}≤Pr{Bin(m,γ)<μ/2}≤e−μ/8≤e−(L+7)<1/100."
+    }
+  ]
+}

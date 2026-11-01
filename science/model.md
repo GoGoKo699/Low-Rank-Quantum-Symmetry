@@ -11,9 +11,9 @@ Let $`\mathcal H\cong\mathbb C^d`$, with $`d\ge2`$, and let $`\rho`$ be an unkno
 | Input | Meaning and cost |
 |---|---|
 | Independent state copies | Each requested specimen is in state $`\rho`$, independent of the others. Every target and program copy is counted. |
-| Rank bound | A known integer $`1\le r\le d`$ with $`\operatorname{rank}\rho\le r`$. The exact rank and eigenbasis are unknown. A larger supplied bound can be replaced by $`\min\{r,d\}`$. |
+| Rank bound | A known integer $`1\le r\le d`$ with $`\mathrm{rank}\rho\le r`$. The exact rank and eigenbasis are unknown. A larger supplied bound can be replaced by $`\min\{r,d\}`$. |
 | Finite abelian group | A decomposition $`G\cong\mathbb Z_{N_1}\times\cdots\times\mathbb Z_{N_k}`$, with efficient arithmetic and a charged approximate quantum Fourier transform. |
-| Known group action | A linear unitary representation $`R:G\to U(\mathcal H)`$ and controlled implementation of $`C_R=\sum_g|g\rangle\langle g|\otimes R(g)`$. |
+| Known group action | A linear unitary representation $`R:G\to U(\mathcal H)`$ and controlled implementation of $`C_R=\sum_g\lvert g\rangle\langle g\rvert\otimes R(g)`$. |
 | Separation parameter | A rational $`0\lt\varepsilon\le1`$ for the promise below. Its input length is part of classical preprocessing. |
 
 The representation satisfies $`R(gh)=R(g)R(h)`$ at the mathematical level. Finite gate synthesis approximates its supplied implementation within an allocated total error budget. The theorem does not automatically cover a merely projective representation. Phases of the constructed pure state's stabilizer are handled within an ordinary linear representation.

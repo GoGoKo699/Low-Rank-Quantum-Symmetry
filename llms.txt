@@ -21,4 +21,11 @@
 - [Recorded results](verification/results.json): metrics, environment, fixed seed and executed script hash.
 - [Dependencies](verification/requirements.txt): pinned numerical dependencies.
 
+## Learning routes
+
+- [Learning overview](learning/README.md): entry points through the construction and selected textbook.
+- [Thirty milestones](learning/MILESTONES.md): project-defined questions, dependencies, understanding targets and scientific references.
+- [Watrous bridge](learning/WATROUS_BRIDGE.md): source sections, notation, assumptions and the steps from quantum-information foundations to this algorithm.
+- [Hosted mathematics](verification/hosted/README.md): actual-host expression comparison and its visual-review limits.
+
 Use the model and complete algorithm when stating a complexity claim. Charge source preparation and the supplied action and Fourier circuits. Preserve the finite-abelian, low-rank, exact-or-separated and independent-copy assumptions. The input has no eigengap or positive spectral-floor assumption. The channel result uses a normalized-Choi trace gap. The conservative copy bound is not an optimality or practical-speedup result. Numerical checks are distinct from the analytic proof.

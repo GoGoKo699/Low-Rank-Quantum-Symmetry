@@ -34,7 +34,7 @@ The basic subroutines are inherited. In particular, this project does not introd
 
 Marcel Hinsche, Jens Eisert, and Jose Carrasco, **Abelian State Hidden Subgroup Problem: Learning Stabilizer Groups and Beyond**, *PRX Quantum* **7**, 020337 (published 26 May 2026). [Journal article](https://journals.aps.org/prxquantum/abstract/10.1103/6frk-891j), [journal PDF](https://journals.aps.org/prxquantum/pdf/10.1103/6frk-891j), DOI: 10.1103/6frk-891j.
 
-The comparison is with **§II D, Definition 6, Eqs. (39)–(40), journal pages 020337-9–020337-10**. Definition 6 permits ordinary conjugation invariance and a specified norm gap outside the subgroup. The authors explain that the mixed-state character distribution can put weight outside the true annihilator. They establish success under the stronger condition $`\operatorname{Tr}(R(h)\rho)=1`$, with a character gap outside the subgroup, and leave efficient learning under the weaker invariance condition open.
+The comparison is with **§II D, Definition 6, Eqs. (39)–(40), journal pages 020337-9–020337-10**. Definition 6 permits ordinary conjugation invariance and a specified norm gap outside the subgroup. The authors explain that the mixed-state character distribution can put weight outside the true annihilator. They establish success under the stronger condition $`\mathrm{Tr}(R(h)\rho)=1`$, with a character gap outside the subgroup, and leave efficient learning under the weaker invariance condition open.
 
 The present rank-parameterized theorem addresses a restricted regime of that open task. It does not claim unrestricted polynomial-time mixed StateHSP. Their §§II B–C are also part of the attribution for character measurements and their efficient realization.
 
@@ -42,7 +42,7 @@ The present rank-parameterized theorem addresses a restricted regime of that ope
 
 Isaac Holt and Sathyawageeswar Subramanian, **Learning quantum symmetries**, arXiv:2609.38085, **version 2**. [Version record](https://arxiv.org/abs/2609.38085v2), [inspected version-2 PDF](https://pdfs.assets.alphaxiv.org/2609.38085v2.pdf).
 
-**§8, Problem 8.1 and Lemma 8.3, pp. 22–23**, defines the anyonic condition $`|\operatorname{Tr}(R(g)\rho)|=1`$ and uses the doubled representation $`R(g)\otimes R(g^{-1})`$. Its coefficient is $`|\operatorname{Tr}(R(g)\rho)|^2`$. This supplies the phase-insensitive Fourier-sampling ingredient after our reduction to a pure state. Their mixed-state stabilizer application should not be described as learning every ordinary conjugation symmetry.
+**§8, Problem 8.1 and Lemma 8.3, pp. 22–23**, defines the anyonic condition $`|\mathrm{Tr}(R(g)\rho)|=1`$ and uses the doubled representation $`R(g)\otimes R(g^{-1})`$. Its coefficient is $`|\mathrm{Tr}(R(g)\rho)|^2`$. This supplies the phase-insensitive Fourier-sampling ingredient after our reduction to a pure state. Their mixed-state stabilizer application should not be described as learning every ordinary conjugation symmetry.
 
 **§10.4, Problems 10.13–10.14, p. 41**, defines subspace symmetry learning and ConjugateSL, and reduces the former to the latter using maximally mixed subspace states. That section does not provide a general ConjugateSL algorithm. The new claim here concerns a finite abelian group with a linear action, low rank, arbitrary spectrum, and an explicit trace-distance promise; it does not inherit the paper's broader projective or nonabelian scope.
 

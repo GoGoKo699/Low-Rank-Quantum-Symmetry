@@ -19,7 +19,7 @@ Conjugation by $`X`$ swaps the diagonal entries, so
 
 ```math
 \rho_\eta-X\rho_\eta X
-=\operatorname{diag}(2\eta,-2\eta),
+=\mathrm{diag}(2\eta,-2\eta),
 \qquad
 D(\rho_\eta,X\rho_\eta X)=2\eta.
 ```
@@ -45,12 +45,12 @@ Let $`G=\mathbb Z_2`$, $`R(1)=Z`$, and $`\rho=I_2/2`$. Then
 ```math
 Z\rho Z=\rho,
 \qquad
-\operatorname{Tr}(Z\rho)=0.
+\mathrm{Tr}(Z\rho)=0.
 ```
 
-The conjugation stabilizer is all of $`G`$. Both conditions $`\operatorname{Tr}(R(g)\rho)=1`$ and $`|\operatorname{Tr}(R(g)\rho)|=1`$ nevertheless reject its nonidentity element.
+The conjugation stabilizer is all of $`G`$. Both conditions $`\mathrm{Tr}(R(g)\rho)=1`$ and $`|\mathrm{Tr}(R(g)\rho)|=1`$ nevertheless reject its nonidentity element.
 
-More generally, $`|\operatorname{Tr}(U\rho)|=1`$ for a unitary $`U`$ forces $`U`$ to act by one common phase on the support of $`\rho`$. Indeed, write $`\rho=\sum_i\lambda_i|i\rangle\langle i|`$ over its positive eigenvalues. Equality in
+More generally, $`|\mathrm{Tr}(U\rho)|=1`$ for a unitary $`U`$ forces $`U`$ to act by one common phase on the support of $`\rho`$. Indeed, write $`\rho=\sum_i\lambda_i|i\rangle\langle i|`$ over its positive eigenvalues. Equality in
 
 ```math
 \left|\sum_i\lambda_i\langle i|U|i\rangle\right|
@@ -68,20 +68,20 @@ This explains why the stronger mixed-state results in [HEC26, §II D](../referen
 
 Let $`\mathcal E:\mathcal L(A)\to\mathcal L(B)`$ be an unknown channel with minimal Kraus rank at most $`r`$. The access model permits a call to $`\mathcal E`$ on an input entangled with a reference. Each invocation is charged. Independent invocations implement the same channel; a correlated memory process is a different model.
 
-Let $`U_A(g)`$ and $`V_B(g)`$ be supplied linear unitary representations of a finite abelian group $`G`$, with efficiently implementable controlled actions. Define $`\operatorname{Ad}_U(X)=UXU^\dagger`$. The covariance subgroup is
+Let $`U_A(g)`$ and $`V_B(g)`$ be supplied linear unitary representations of a finite abelian group $`G`$, with efficiently implementable controlled actions. Define $`\mathrm{Ad}_U(X)=UXU^\dagger`$. The covariance subgroup is
 
 ```math
 H_{\mathrm{cov}}
 =\{g\in G:
-\mathcal E\circ\operatorname{Ad}_{U_A(g)}
-=\operatorname{Ad}_{V_B(g)}\circ\mathcal E\}.
+\mathcal E\circ\mathrm{Ad}_{U_A(g)}
+=\mathrm{Ad}_{V_B(g)}\circ\mathcal E\}.
 ```
 
 Prepare the normalized Choi state
 
 ```math
 J_{\mathcal E}
-=(\operatorname{id}_{A'}\otimes\mathcal E)
+=(\mathrm{id}_{A'}\otimes\mathcal E)
   (|\Phi_A\rangle\langle\Phi_A|),
 \qquad
 |\Phi_A\rangle=\frac1{\sqrt{d_A}}\sum_{i=0}^{d_A-1}|i\rangle_{A'}|i\rangle_A.
@@ -111,7 +111,7 @@ R_{\mathrm{Choi}}(g)J_{\mathcal E}R_{\mathrm{Choi}}(g)^\dagger\right)
 For any channel $`\Phi`$ and unitary $`U`$, the transpose identity for a maximally entangled state gives
 
 ```math
-J_{\Phi\circ\operatorname{Ad}_{U^\dagger}}
+J_{\Phi\circ\mathrm{Ad}_{U^\dagger}}
 =(\overline U\otimes I)J_\Phi(U^T\otimes I).
 ```
 
@@ -119,26 +119,26 @@ Applying this identity and the output action yields
 
 ```math
 R_{\mathrm{Choi}}(g)J_{\mathcal E}R_{\mathrm{Choi}}(g)^\dagger
-=J_{\operatorname{Ad}_{V_B(g)}
-      \circ\mathcal E\circ\operatorname{Ad}_{U_A(g)^\dagger}}.
+=J_{\mathrm{Ad}_{V_B(g)}
+      \circ\mathcal E\circ\mathrm{Ad}_{U_A(g)^\dagger}}.
 ```
 
 The Choi map is injective, since
 
 ```math
 \mathcal E(X)
-=d_A\operatorname{Tr}_{A'}[(X^T\otimes I)J_{\mathcal E}].
+=d_A\mathrm{Tr}_{A'}[(X^T\otimes I)J_{\mathcal E}].
 ```
 
 Consequently equality of the two Choi states is equivalent to
 
 ```math
-\operatorname{Ad}_{V_B(g)}
-\circ\mathcal E\circ\operatorname{Ad}_{U_A(g)^\dagger}
+\mathrm{Ad}_{V_B(g)}
+\circ\mathcal E\circ\mathrm{Ad}_{U_A(g)^\dagger}
 =\mathcal E,
 ```
 
-which, after composing on the right by $`\operatorname{Ad}_{U_A(g)}`$, is exactly the covariance condition. The same unitary-change identity gives the useful metric equality
+which, after composing on the right by $`\mathrm{Ad}_{U_A(g)}`$, is exactly the covariance condition. The same unitary-change identity gives the useful metric equality
 
 ```math
 \begin{aligned}
@@ -146,8 +146,8 @@ which, after composing on the right by $`\operatorname{Ad}_{U_A(g)}`$, is exactl
 R_{\mathrm{Choi}}(g)J_{\mathcal E}R_{\mathrm{Choi}}(g)^\dagger\right)\\
 &\qquad=
 D\!\left(
-J_{\mathcal E\circ\operatorname{Ad}_{U_A(g)}},
-J_{\operatorname{Ad}_{V_B(g)}\circ\mathcal E}
+J_{\mathcal E\circ\mathrm{Ad}_{U_A(g)}},
+J_{\mathrm{Ad}_{V_B(g)}\circ\mathcal E}
 \right).
 \end{aligned}
 ```
@@ -162,7 +162,7 @@ J_{\mathcal E}
 |K_a\rangle\!\rangle=\sum_i|i\rangle\otimes K_a|i\rangle.
 ```
 
-The rank of this positive operator is the dimension of the span of the vectorized Kraus operators. A spectral decomposition constructs a Kraus representation with precisely that many terms. Hence $`\operatorname{rank}(J_{\mathcal E})`$ equals the minimal Kraus rank.
+The rank of this positive operator is the dimension of the span of the vectorized Kraus operators. A spectral decomposition constructs a Kraus representation with precisely that many terms. Hence $`\mathrm{rank}(J_{\mathcal E})`$ equals the minimal Kraus rank.
 
 ### Resulting resources
 
@@ -185,11 +185,11 @@ No controlled call to $`\mathcal E`$, inverse channel, environment access, Kraus
 Consider the qubit channel
 
 ```math
-\mathcal E_p=(1-p)\operatorname{id}+p\,\operatorname{Ad}_X,
-\qquad 0<p<1,
+\mathcal E_p=(1-p)\mathrm{id}+p\,\mathrm{Ad}_X,
+\qquad 0\lt p\lt1,
 ```
 
-and let $`G=\mathbb Z_4`$ act on both input and output by $`U(g)=V(g)=\operatorname{diag}(1,i^g)`$. Its Choi state is
+and let $`G=\mathbb Z_4`$ act on both input and output by $`U(g)=V(g)=\mathrm{diag}(1,i^g)`$. Its Choi state is
 
 ```math
 J_{\mathcal E_p}
@@ -214,7 +214,7 @@ The Choi promise holds with $`\epsilon=p`$, so the state theorem applies using o
 This example also separates weak and strong symmetry at the channel level: at the exact covariance element $`g=2`$,
 
 ```math
-\operatorname{Tr}(R_{\mathrm{Choi}}(2)J_{\mathcal E_p})=1-2p,
+\mathrm{Tr}(R_{\mathrm{Choi}}(2)J_{\mathcal E_p})=1-2p,
 ```
 
 whose magnitude is strictly smaller than one. An algorithm that recognizes only a common phase on the Choi support misses that covariance element.
@@ -229,10 +229,10 @@ W_0=I-2|0\rangle\langle0|,
 W_1=I-2|1\rangle\langle1|.
 ```
 
-Let $`S`$ swap basis vectors $`|0\rangle`$ and $`|1\rangle`$ and fix all others. Take $`G=\mathbb Z_2`$, $`U(1)=V(1)=S`$, and $`\mathcal E=\operatorname{Ad}_{W_0}`$. The conjugated channel is $`\operatorname{Ad}_{W_1}`$, since $`SW_0S=W_1`$. Their normalized Choi vectors have overlap
+Let $`S`$ swap basis vectors $`|0\rangle`$ and $`|1\rangle`$ and fix all others. Take $`G=\mathbb Z_2`$, $`U(1)=V(1)=S`$, and $`\mathcal E=\mathrm{Ad}_{W_0}`$. The conjugated channel is $`\mathrm{Ad}_{W_1}`$, since $`SW_0S=W_1`$. Their normalized Choi vectors have overlap
 
 ```math
-\frac{\operatorname{Tr}(W_0^\dagger W_1)}d=1-\frac4d.
+\frac{\mathrm{Tr}(W_0^\dagger W_1)}d=1-\frac4d.
 ```
 
 Thus the nontrivial Choi covariance distance is
@@ -243,7 +243,7 @@ D_{\mathrm{Choi}}
 =\sqrt{\frac8d-\frac{16}{d^2}}.
 ```
 
-By contrast, the two channels send $`(|0\rangle+|2\rangle)/\sqrt2`$ to orthogonal pure states. Their half diamond distance is therefore one. Unitary precomposition preserves that distance, so the covariance violation between $`\mathcal E\circ\operatorname{Ad}_S`$ and $`\operatorname{Ad}_S\circ\mathcal E`$ also has half diamond distance one.
+By contrast, the two channels send $`(|0\rangle+|2\rangle)/\sqrt2`$ to orthogonal pure states. Their half diamond distance is therefore one. Unitary precomposition preserves that distance, so the covariance violation between $`\mathcal E\circ\mathrm{Ad}_S`$ and $`\mathrm{Ad}_S\circ\mathcal E`$ also has half diamond distance one.
 
 This explicitly shows why a constant diamond-distance promise cannot simply be substituted for the Choi-gap promise in the resource bound. It is not a lower bound against algorithms that use other channel inputs.
 
@@ -264,7 +264,7 @@ D(\omega_\tau,R(1)\omega_\tau R(1)^\dagger)
 =D(\tau,I_s/s).
 ```
 
-Also $`\operatorname{rank}(\omega_\tau)\leq2s`$. If $`\tau=I_s/s`$, the subgroup is all of $`G`$; if $`D(\tau,I_s/s)\geq\epsilon`$, it is trivial. A source copy of $`\omega_\tau`$ can be prepared with at most one copy of $`\tau`$, a fair classical bit, and a known maximally mixed state. Taking $`s`$ to be a power of two makes the latter preparation immediate.
+Also $`\mathrm{rank}(\omega_\tau)\leq2s`$. If $`\tau=I_s/s`$, the subgroup is all of $`G`$; if $`D(\tau,I_s/s)\geq\epsilon`$, it is trivial. A source copy of $`\omega_\tau`$ can be prepared with at most one copy of $`\tau`$, a fair classical bit, and a known maximally mixed state. Taking $`s`$ to be a power of two makes the latter preparation immediate.
 
 Therefore a $`q`$-copy symmetry learner would give a $`q`$-copy mixedness tester. [OW15, Theorem 1.10](../references/related_work.md#ow15) gives an inherited worst-case lower bound
 
@@ -281,7 +281,7 @@ The algorithm does not require separation between distinct eigenvalues. It does 
 For example, let $`G=\mathbb Z_N`$, $`N\geq8`$, act by
 
 ```math
-R(k)=\operatorname{diag}(1,e^{2\pi i k/N})
+R(k)=\mathrm{diag}(1,e^{2\pi i k/N})
 ```
 
 on $`|+\rangle`$. Its distance from its image under $`k`$ is $`|\sin(\pi k/N)|`$. A tolerance chosen strictly between $`\sin(\pi/N)`$ and $`\sin(2\pi/N)`$ accepts $`k=1`$ and $`k=-1`$, but rejects $`k=2`$. The accepted set is not a subgroup. Consequently an arbitrary tolerance-based version of the task cannot retain the same exact-subgroup output contract without additional definitions and promises.

@@ -4,6 +4,8 @@ These checks target specific failure modes in the low-rank symmetry-learning arg
 
 The current recorded run passes all seven diagnostic groups. The full metrics, fixed seed, dependency versions, execution time and SHA-256 of the executed script are in [results.json](results.json).
 
+The separate [hosted mathematics check](hosted/README.md) compares every tracked Markdown expression with its actual commit-pinned GitHub rendering at wide and narrow viewports. Its read-only workflow retains a report and screenshots for visual inspection. These presentation checks and the scientific diagnostics answer different questions.
+
 ## Run
 
 From the repository root:
