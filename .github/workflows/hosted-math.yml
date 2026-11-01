@@ -33,6 +33,7 @@ jobs:
             --root "$GITHUB_WORKSPACE" \
             --repository "$GITHUB_REPOSITORY" \
             --revision "$(git rev-parse HEAD)" \
+            --contract verification/hosted/math-contract.json \
             --output "$RUNNER_TEMP/hosted-math"
       - name: Preserve capture evidence for review
         if: always()

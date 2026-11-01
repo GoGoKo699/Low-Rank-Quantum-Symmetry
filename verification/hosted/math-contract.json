@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "README.md",
+      "index": 7,
+      "source_sha256": "b792bf64c45b73f477e03b0d36725f95067014b2ba80df91bad649cd36123230",
+      "expected_text": "O~(r12ε−10L2)"
+    },
+    {
+      "path": "README.md",
+      "index": 8,
+      "source_sha256": "d80490bbfb5e6c36a4ced11f492fbc751fef83c58ce97e49567938e662b80107",
+      "expected_text": "O(rε−2L)"
+    },
+    {
+      "path": "README.md",
+      "index": 9,
+      "source_sha256": "2091129ba5c02f24c4a0cf8082c87ba8f73810f693363f6c741250fd6c0c0c46",
+      "expected_text": "O(r⌈log2⁡d⌉+L+log⁡(r/ε))"
+    },
+    {
+      "path": "science/model.md",
+      "index": 18,
+      "source_sha256": "c9cf1ea178362444fa45ad19a52d0a6389acfeb030de22325c382dced223ba92",
+      "expected_text": "Hρ={g∈G:R(g)ρR(g)†=ρ}."
+    },
+    {
+      "path": "science/model.md",
+      "index": 21,
+      "source_sha256": "5cbf5fe781e3dddfc16b71ea1307c53653e6d5882dc504243e1e3f9842913797",
+      "expected_text": "∀g∈G,D(ρ,R(g)ρR(g)†)∈{0}∪[ε,1]."
+    },
+    {
+      "path": "science/model.md",
+      "index": 34,
+      "source_sha256": "96962e171cd0d3f1971922da5f49e309a29ae2526f753e5ef723fc21fa9a1a18",
+      "expected_text": "N=O~(r12ε−10L2)"
+    },
+    {
+      "path": "science/model.md",
+      "index": 38,
+      "source_sha256": "406f341cf5d734260d0454a6c13f19767b5dfcf101de82f5438be18422fd8b42",
+      "expected_text": "O(rn+L+log⁡(r/ε)),"
+    }
+  ]
+}
