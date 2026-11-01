@@ -202,7 +202,7 @@
     {
       "path": "science/examples_and_channels.md",
       "index": 75,
-      "source_sha256": "784275c9d66973e44837a28b6080aa40991a3478cd4d7c688cc1e341ec6af205",
+      "source_sha256": "c0daba49aca520111c37c9de63a3ec690031d9442fd454e05abe3668d61a920e",
       "expected_text": "Ep=(1−p)id+pAdX,0<p<1,"
     },
     {

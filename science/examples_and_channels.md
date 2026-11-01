@@ -186,7 +186,7 @@ Consider the qubit channel
 
 ```math
 \mathcal E_p=(1-p)\mathrm{id}+p\,\mathrm{Ad}_X,
-\qquad 0<p<1,
+\qquad 0\lt p\lt1,
 ```
 
 and let $`G=\mathbb Z_4`$ act on both input and output by $`U(g)=V(g)=\mathrm{diag}(1,i^g)`$. Its Choi state is
