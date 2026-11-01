@@ -1,0 +1,333 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-11-01T02:42:31.567291+00:00",
+  "script_sha256": "d30d71d1e14adac57951a4abe1765ba713a15adf1fcd60f20abd96a4d3cabec3",
+  "seed": 20261101,
+  "base_numerical_tolerance": 2e-10,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux"
+  },
+  "claim_boundary": "Finite diagnostics only. These checks do not prove general correctness, novelty, copy/gate complexity, controlled-DME accuracy, asymptotic rank stopping, or robustness beyond the stated exact-symmetry promise.",
+  "checks": [
+    {
+      "name": "coarse_band_subgroups",
+      "metrics": {
+        "cases": [
+          {
+            "case": "nonflat_full_support",
+            "dimension": 2,
+            "rank_bound": 2,
+            "group_moduli": [
+              2
+            ],
+            "exact_subgroup": [
+              [
+                0
+              ]
+            ],
+            "promised_epsilon": 0.2,
+            "minimum_outside_distance": 0.2999999999999998,
+            "offsets_checked": 37,
+            "maximum_rounding_distance": 0.00014608808570511794,
+            "rounding_bound": 0.005,
+            "retained_band_count_range": [
+              2,
+              2
+            ],
+            "minimum_retained_rank": 2,
+            "minimum_boundary_margin": 1.3513513513316866e-05,
+            "required_good_shift_margin": 5e-07,
+            "representation_residual": 4.3632059942831334e-16
+          },
+          {
+            "case": "almost_degenerate_nontrivial_subgroup",
+            "dimension": 4,
+            "rank_bound": 2,
+            "group_moduli": [
+              4
+            ],
+            "exact_subgroup": [
+              [
+                0
+              ],
+              [
+                2
+              ]
+            ],
+            "promised_epsilon": 0.4,
+            "minimum_outside_distance": 0.9999999999999996,
+            "offsets_checked": 37,
+            "maximum_rounding_distance": 9.999937992919025e-12,
+            "rounding_bound": 0.01,
+            "retained_band_count_range": [
+              1,
+              1
+            ],
+            "minimum_retained_rank": 2,
+            "minimum_boundary_margin": 2.7027017026910017e-05,
+            "required_good_shift_margin": 1e-06,
+            "representation_residual": 1.120368172189116e-15
+          },
+          {
+            "case": "discarded_tiny_eigenvalues",
+            "dimension": 8,
+            "rank_bound": 4,
+            "group_moduli": [
+              2,
+              2
+            ],
+            "exact_subgroup": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "promised_epsilon": 0.4,
+            "minimum_outside_distance": 0.9999999999999998,
+            "offsets_checked": 37,
+            "maximum_rounding_distance": 9.739205773651445e-05,
+            "rounding_bound": 0.01,
+            "retained_band_count_range": [
+              2,
+              2
+            ],
+            "minimum_retained_rank": 2,
+            "minimum_boundary_margin": 1.3513512913505111e-05,
+            "required_good_shift_margin": 2.5e-07,
+            "representation_residual": 1.2547314311481057e-15
+          }
+        ],
+        "scope": "Enumerated finite actions and 37 offsets per case; no spectral-filter circuit simulated."
+      },
+      "status": "passed",
+      "wall_seconds": 0.04187461000037729
+    },
+    {
+      "name": "tensor_wedge_geometry",
+      "metrics": {
+        "cases": 12,
+        "largest_explicit_tensor_dimension": 7776,
+        "maximum_overlap_identity_residual": 2.3314683517128287e-15,
+        "maximum_gap_inequality_violation": 1.5543122344752192e-15,
+        "minimum_observed_gap_over_trace_distance_squared": 6.293600962840197,
+        "scope": "Explicit tensor contractions versus SVD/determinant identities; finite floating-point checks."
+      },
+      "status": "passed",
+      "wall_seconds": 0.007561189000170998
+    },
+    {
+      "name": "growth_probability_and_sector",
+      "metrics": {
+        "ambient_dimension": 4,
+        "support_rank": 3,
+        "spectrum": [
+          0.55,
+          0.3,
+          0.15
+        ],
+        "cases": [
+          {
+            "degree": 1,
+            "success_probability": 0.3606948044286299,
+            "proven_floor_bound": 0.15,
+            "partial_trace_identity_residual": 0.0,
+            "retained_antisymmetry_leakage": 0.0,
+            "retained_support_leakage": 4.683753385137379e-17
+          },
+          {
+            "degree": 2,
+            "success_probability": 0.11534168958855323,
+            "proven_floor_bound": 0.049999999999999996,
+            "partial_trace_identity_residual": 0.0,
+            "retained_antisymmetry_leakage": 2.6020852139652106e-18,
+            "retained_support_leakage": 7.719519468096792e-17
+          },
+          {
+            "degree": 3,
+            "success_probability": -2.439454888092385e-19,
+            "proven_floor_bound": 0.0,
+            "partial_trace_identity_residual": 3.144186300207963e-18,
+            "retained_antisymmetry_leakage": 9.90960785651751e-17,
+            "retained_support_leakage": -2.6129272356900657e-16
+          }
+        ],
+        "scope": "Arbitrary random mixed states on exterior sectors, including the true-rank stopping case."
+      },
+      "status": "passed",
+      "wall_seconds": 0.11320975000035105
+    },
+    {
+      "name": "physical_growth_instrument",
+      "metrics": {
+        "dimension": 3,
+        "retained_degree": 2,
+        "success_probability": 0.33333333333333337,
+        "failure_probability": 0.6666666666666667,
+        "success_vector_residual": 1.3597399555105182e-16,
+        "coherent_failure_correction_residual": 3.0007907971999624e-16,
+        "clean_ancilla_double_B_residual": 3.8554115232237736e-16,
+        "corrected_retained_sector_leakage": 0.0,
+        "negative_control_omitted_uncompute_leakage": 0.5,
+        "negative_control_fine_ancilla_measurement_leakage": 0.5000000000000002,
+        "source": "Bene Watts et al., arXiv:2610.06737v1, Algorithm 1, especially steps 4 and 6.",
+        "scope": "Full finite ancilla/active circuit; verifies the coarse binary measurement and failure correction are essential."
+      },
+      "status": "passed",
+      "wall_seconds": 0.0014561160000994278
+    },
+    {
+      "name": "support_only_counterexample",
+      "metrics": {
+        "rank": 2,
+        "conjugation_distance_under_X": 0.30000000000000004,
+        "whole_support_wedge_squared_overlap": 0.9999999999999996,
+        "separate_band_wedges_squared_overlap": 0.0,
+        "flat_state_conjugation_distance_under_Z": 0.0,
+        "flat_state_representation_trace_under_Z": 0.0,
+        "scope": "Exact two-dimensional counterexamples to support-only and strong-symmetry substitutions."
+      },
+      "status": "passed",
+      "wall_seconds": 0.00040365600034419913
+    },
+    {
+      "name": "fourier_difference_recovery",
+      "metrics": {
+        "group_moduli": [
+          4
+        ],
+        "subgroup": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "annihilator": [
+          [
+            0
+          ],
+          [
+            2
+          ]
+        ],
+        "ordinary_character_distribution": [
+          2.1637210249284523e-32,
+          0.5,
+          4.2504348863363905e-33,
+          0.5
+        ],
+        "difference_character_distribution": [
+          0.5,
+          2.5887645135620915e-32,
+          0.5,
+          2.5887645135620915e-32
+        ],
+        "fourier_transform_residual": 8.965815651950638e-16,
+        "difference_mass_outside_annihilator": 5.177529027124183e-32,
+        "negative_control_ordinary_mass_outside_annihilator": 1.0,
+        "minimum_proper_subgroup_escape_probability": 0.5,
+        "squared_overlap_gap": 1.0,
+        "exact_recovery_probability_after_1_to_12_samples": [
+          0.5,
+          0.75,
+          0.875,
+          0.9375,
+          0.96875,
+          0.984375,
+          0.9921875,
+          0.99609375,
+          0.998046875,
+          0.9990234375,
+          0.99951171875,
+          0.999755859375
+        ],
+        "scope": "Exact finite subgroup-state probability propagation, not Monte Carlo or an asymptotic proof."
+      },
+      "status": "passed",
+      "wall_seconds": 0.0006677920000583981
+    },
+    {
+      "name": "choi_covariance_and_norm_caveat",
+      "metrics": {
+        "noisy_channel_kraus_rank": 2,
+        "covariance_group_modulus": 4,
+        "covariance_subgroup": [
+          0,
+          2
+        ],
+        "covariance_cases": [
+          {
+            "group_element": 0,
+            "choi_trace_distance": 0.0,
+            "direct_covariance_residual": 0.0
+          },
+          {
+            "group_element": 1,
+            "choi_trace_distance": 0.29999999999999993,
+            "direct_covariance_residual": 0.5999999999999999
+          },
+          {
+            "group_element": 2,
+            "choi_trace_distance": 0.0,
+            "direct_covariance_residual": 0.0
+          },
+          {
+            "group_element": 3,
+            "choi_trace_distance": 0.29999999999999993,
+            "direct_covariance_residual": 0.5999999999999999
+          }
+        ],
+        "dimension_gap_counterexample": [
+          {
+            "input_dimension": 4,
+            "kraus_rank": 1,
+            "choi_trace_distance": 1.0,
+            "half_diamond_distance": 1.0,
+            "explanation": "An explicit pure input gives distance one; this saturates the universal channel-distance upper bound."
+          },
+          {
+            "input_dimension": 8,
+            "kraus_rank": 1,
+            "choi_trace_distance": 0.8660254037844386,
+            "half_diamond_distance": 1.0,
+            "explanation": "An explicit pure input gives distance one; this saturates the universal channel-distance upper bound."
+          },
+          {
+            "input_dimension": 16,
+            "kraus_rank": 1,
+            "choi_trace_distance": 0.6614378277661477,
+            "half_diamond_distance": 1.0,
+            "explanation": "An explicit pure input gives distance one; this saturates the universal channel-distance upper bound."
+          },
+          {
+            "input_dimension": 32,
+            "kraus_rank": 1,
+            "choi_trace_distance": 0.4841229182759271,
+            "half_diamond_distance": 1.0,
+            "explanation": "An explicit pure input gives distance one; this saturates the universal channel-distance upper bound."
+          },
+          {
+            "input_dimension": 64,
+            "kraus_rank": 1,
+            "choi_trace_distance": 0.34798527267687634,
+            "half_diamond_distance": 1.0,
+            "explanation": "An explicit pure input gives distance one; this saturates the universal channel-distance upper bound."
+          }
+        ],
+        "scope": "Choi-trace covariance identity and a rank-one channel family separating Choi and diamond gaps."
+      },
+      "status": "passed",
+      "wall_seconds": 0.005141826999988552
+    }
+  ],
+  "status": "passed",
+  "wall_seconds": 0.1705731779998132
+}
