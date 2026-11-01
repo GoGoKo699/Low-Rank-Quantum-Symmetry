@@ -1,0 +1,24 @@
+# Low-Rank Quantum Symmetry
+
+> A finite quantum algorithm learns the exact conjugation-symmetry subgroup of an unknown low-rank mixed state inside a supplied finite abelian group, using independent copies and an exact-or-separated trace-distance promise.
+
+## Scientific entry points
+
+- [Repository overview](README.md): headline result, resources, scope and reproduction.
+- [Connected scientific account](science/README.md): narrative and proof dependencies.
+- [Model and guarantees](science/model.md): authoritative access, promise, output, resource and perturbation conventions.
+- [Spectral reduction](science/spectral_reduction.md): coarse bands, subgroup preservation, wedge geometry, random shifts and Fourier recovery.
+- [Finite copy algorithm](science/copy_algorithm.md): implementation, finite parameters, rank stopping, failure correction, sampler hybrid, compilation and resource counts.
+- [Examples and channels](science/examples_and_channels.md): support and strong-symmetry counterexamples, Choi covariance, metric limitation and inherited rank lower bound.
+- [Interpretation](science/interpretation.md): meaning of the capability, physical costs and remaining questions.
+
+## Attribution and reproducibility
+
+- [Related work](references/related_work.md): inspected primary versions, exact comparison points and inherited modules.
+- [Bibliography](references/references.bib): bibliographic records.
+- [Verification](verification/README.md): diagnostic purpose, command, observations and limitations.
+- [Checks](verification/checks.py): executable finite diagnostic suite.
+- [Recorded results](verification/results.json): metrics, environment, fixed seed and executed script hash.
+- [Dependencies](verification/requirements.txt): pinned numerical dependencies.
+
+Use the model and complete algorithm when stating a complexity claim. Charge source preparation and the supplied action and Fourier circuits. Preserve the finite-abelian, low-rank, exact-or-separated and independent-copy assumptions. The input has no eigengap or positive spectral-floor assumption. The channel result uses a normalized-Choi trace gap. The conservative copy bound is not an optimality or practical-speedup result. Numerical checks are distinct from the analytic proof.
