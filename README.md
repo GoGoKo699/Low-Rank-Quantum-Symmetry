@@ -43,6 +43,10 @@ Start with the [connected scientific overview](science/README.md), or go directl
 
 The [LLM reading guide](llms.txt) maps scientific questions to their authoritative files.
 
+## Learn the construction
+
+The [learning route](learning/README.md) connects John Watrous's *The Theory of Quantum Information* to this problem. The [30 milestones](learning/MILESTONES.md) follow the argument from state distinguishability through spectral bands, exterior powers, Fourier recovery and finite resource accounting. The [source bridge](learning/WATROUS_BRIDGE.md) identifies the textbook foundations and the additional algorithmic steps developed in the scientific account.
+
 ## Reproduce the finite checks
 
 From the repository root:
@@ -53,6 +57,8 @@ python -B verification/checks.py
 ```
 
 All seven recorded diagnostic groups pass. They check finite subgroup examples, wedge geometry, the complete physical growth instrument, Fourier differences, and channel counterexamples. The [verification account](verification/README.md) explains the negative controls, numerical tolerances and scope; [results.json](verification/results.json) records the executed script hash and environment. The general theorem and resource bounds rest on the written proofs.
+
+The [hosted mathematics check](verification/hosted/README.md) compares expressions with their actual GitHub rendering at wide and narrow viewports. Its report and screenshots require separate visual review.
 
 ## Scope
 
