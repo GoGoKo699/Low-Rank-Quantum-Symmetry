@@ -4,7 +4,7 @@ This page proves the mathematical reduction from mixed-state conjugation symmetr
 
 ## 1. Setting and notation
 
-Let $`\rho`$ be a density operator on $`\mathcal H\cong\mathbb C^d`$, and suppose a known integer $`r\ge 1`$ satisfies $`\operatorname{rank}\rho\le r`$. Replacing $`r`$ by $`\min\{r,d\}`$ is permitted. Throughout,
+Let $`\rho`$ be a density operator on $`\mathcal H\cong\mathbb C^d`$, and suppose a known integer $`r\ge 1`$ satisfies $`\mathrm{rank}\rho\le r`$. Replacing $`r`$ by $`\min\{r,d\}`$ is permitted. Throughout,
 
 ```math
 D(\rho,\tau)=\frac12\|\rho-\tau\|_1,
@@ -48,10 +48,10 @@ I_j=[u+jw,u+(j+1)w),\qquad j=0,1,2,\ldots.
 The interval containing the eigenvalue $`1`$, if present, extends beyond $`1`$. There is no additional fixed boundary at $`1`$. Let $`P_j`$ be the spectral projector of $`\rho`$ onto $`I_j`$, retaining only nonzero projectors. Write
 
 ```math
-r_j=\operatorname{rank}P_j,
+r_j=\mathrm{rank}P_j,
 \qquad b_j=u+\left(j+\frac12\right)w,
 \qquad A=\sum_j b_jP_j,
-\qquad s=\operatorname{Tr}A,
+\qquad s=\mathrm{Tr}A,
 \qquad \sigma=A/s.
 ```
 
@@ -113,7 +113,7 @@ For a rank-$`k`$ projector $`P`$, choose any orthonormal basis $`v_1,\ldots,v_k`
 
 ```math
 |\wedge P\rangle
-=\frac1{\sqrt{k!}}\sum_{\pi\in S_k}\operatorname{sgn}(\pi)
+=\frac1{\sqrt{k!}}\sum_{\pi\in S_k}\mathrm{sgn}(\pi)
 |v_{\pi(1)}\rangle\otimes\cdots\otimes|v_{\pi(k)}\rangle.
 ```
 
@@ -127,7 +127,7 @@ A different orthonormal basis changes this vector only by a phase. Its density o
 
 ### Lemma 3: wedge overlap and principal angles
 
-Let $`U`$ be unitary, and let $`\theta_1,\ldots,\theta_k\in[0,\pi/2]`$ be the principal angles between $`\operatorname{range}P`$ and $`U\operatorname{range}P`$. Then
+Let $`U`$ be unitary, and let $`\theta_1,\ldots,\theta_k\in[0,\pi/2]`$ be the principal angles between $`\mathrm{range}P`$ and $`U\mathrm{range}P`$. Then
 
 ```math
 \left|\langle\wedge P|U^{\otimes k}|\wedge P\rangle\right|^2
@@ -276,7 +276,7 @@ If $`K`$ is a proper subgroup of $`H^\perp`$, then
 By finite abelian duality, a proper $`K\lneq H^\perp`$ has an element $`g\in K^\perp\setminus H`$. Let $`t=\Pr_q(\chi\notin K)`$. Characters in $`K`$ have $`\chi(g)=1`$, and the real part of any character value is at least $`-1`$. Hence
 
 ```math
-1-2t\le\operatorname{Re}\mathbb E_q\chi(g)
+1-2t\le\mathrm{Re}\mathbb E_q\chi(g)
 =|\langle W|\mathcal R(g)|W\rangle|^2
 \le1-\varepsilon^2/8,
 ```
@@ -299,8 +299,8 @@ With $`m`$ independent difference samples, the generated subgroup equals $`H^\pe
 The binomial mean satisfies $`\mu=m\gamma\ge8(L+7)`$. The multiplicative Chernoff bound gives
 
 ```math
-\Pr\{\operatorname{Bin}(m,\gamma)\lt L\}
-\le\Pr\{\operatorname{Bin}(m,\gamma)\lt\mu/2\}
+\Pr\{\mathrm{Bin}(m,\gamma)\lt L\}
+\le\Pr\{\mathrm{Bin}(m,\gamma)\lt\mu/2\}
 \le e^{-\mu/8}
 \le e^{-(L+7)}\lt1/100.
 ```

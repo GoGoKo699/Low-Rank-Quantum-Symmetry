@@ -195,13 +195,13 @@ e^{itH_c}
 
 A program copy of $`H_c`$ is prepared from one known qubit in $`|1\rangle`$ and one fresh copy of $`\rho`$. Ordinary sample-based exponentiation applied to this extended program state therefore gives the required coherent control. The control qubit may be entangled with every other register; the error bound below is a diamond bound.
 
-For completeness, a partial-SWAP step has a dimension-independent error bound. Let $`F`$ be the full SWAP between the system and one program register. The step applies $`e^{i\Delta F}`$ and discards the program. Its first-order channel is $`\mathrm{id}+i\Delta[H_c,\cdot]`$. Both this reduced unitary channel and the ideal channel $`\operatorname{Ad}_{e^{i\Delta H_c}}`$ have Taylor remainder of ordinary diamond norm at most $`2\Delta^2`$: their Hamiltonians have operator norm at most one, so their unitary-channel second derivatives have diamond norm at most four. Hence their normalized diamond distance is at most $`2\Delta^2`$, and in particular at most $`4\Delta^2`$.
+For completeness, a partial-SWAP step has a dimension-independent error bound. Let $`F`$ be the full SWAP between the system and one program register. The step applies $`e^{i\Delta F}`$ and discards the program. Its first-order channel is $`\mathrm{id}+i\Delta[H_c,\cdot]`$. Both this reduced unitary channel and the ideal channel $`\mathrm{Ad}_{e^{i\Delta H_c}}`$ have Taylor remainder of ordinary diamond norm at most $`2\Delta^2`$: their Hamiltonians have operator norm at most one, so their unitary-channel second derivatives have diamond norm at most four. Hence their normalized diamond distance is at most $`2\Delta^2`$, and in particular at most $`4\Delta^2`$.
 
 Composition with $`n`$ fresh program copies at step size $`t/n`$ gives
 
 ```math
 \Delta_\diamond\bigl(\widetilde{\mathcal U}_t,
-\operatorname{Ad}_{e^{itH_c}}\bigr)
+\mathrm{Ad}_{e^{itH_c}}\bigr)
 \le4t^2/n.
 ```
 
@@ -246,7 +246,7 @@ First invoke the unconditional band sampler $`N_0`$ times, record all non-tail l
 In the ideal experiment, a retained band has mass
 
 ```math
-p_j=\operatorname{Tr}(P_j\rho)\ge w.
+p_j=\mathrm{Tr}(P_j\rho)\ge w.
 ```
 
 There are at most $`r`$ such bands. Consequently the probability of missing any retained band is at most
@@ -277,7 +277,7 @@ The streaming growth primitive is inherited from [AS, Algorithm 1]. The coherent
 Let $`\Pi_k`$ be the antisymmetric projector on the first $`k`$ data registers. Suppose the current data state lies in its range, and append a new data register. For $`k\ge1`$, define
 
 ```math
-A_k=\frac1{k+1}\left(I-\sum_{i=1}^k\operatorname{SWAP}_{i,k+1}\right).
+A_k=\frac1{k+1}\left(I-\sum_{i=1}^k\mathrm{SWAP}_{i,k+1}\right).
 ```
 
 The permutation expansion of the antisymmetric projector gives
@@ -288,10 +288,10 @@ A_k\Pi_k=\Pi_kA_k=\Pi_{k+1},
 \Pi_k\Pi_{k+1}=\Pi_{k+1}\Pi_k=\Pi_{k+1}.
 ```
 
-Let $`W_k`$ be a known unitary preparing the uniform state on labels $`0,\ldots,k`$ from ancilla $`|0\rangle`$. Let $`\operatorname{SELECT}_k`$ apply the identity on label zero and $`-\operatorname{SWAP}_{i,k+1}`$ on label $`i\in\{1,\ldots,k\}`$; define it as the identity on padding labels. Set
+Let $`W_k`$ be a known unitary preparing the uniform state on labels $`0,\ldots,k`$ from ancilla $`|0\rangle`$. Let $`\mathrm{SELECT}_k`$ apply the identity on label zero and $`-\mathrm{SWAP}_{i,k+1}`$ on label $`i\in\{1,\ldots,k\}`$; define it as the identity on padding labels. Set
 
 ```math
-B_k=(W_k^\dagger\otimes I)\operatorname{SELECT}_k(W_k\otimes I).
+B_k=(W_k^\dagger\otimes I)\mathrm{SELECT}_k(W_k\otimes I).
 ```
 
 This is a Hermitian unitary. The growth trial is:
@@ -305,9 +305,9 @@ For $`k=0`$, simply accept the first conditional copy; this is the identity meas
 
 ### Lemma 1: exact physical instrument
 
-On the input subspace $`\operatorname{range}\Pi_k`$, the data Kraus operators before discarding the appended register are $`\Pi_{k+1}`$ on success and $`I-\Pi_{k+1}`$ on failure. Both outcomes preserve antisymmetry of the first $`k`$ registers, and success grows it to $`k+1`$.
+On the input subspace $`\mathrm{range}\Pi_k`$, the data Kraus operators before discarding the appended register are $`\Pi_{k+1}`$ on success and $`I-\Pi_{k+1}`$ on failure. Both outcomes preserve antisymmetry of the first $`k`$ registers, and success grows it to $`k+1`$.
 
-**Proof.** The zero-to-zero block of $`B_k`$ is $`A_k`$, which equals $`\Pi_{k+1}`$ on the input subspace. On a fully antisymmetric $`k+1`$-register vector, every negative transposition in $`\operatorname{SELECT}_k`$ acts as the identity. Hence
+**Proof.** The zero-to-zero block of $`B_k`$ is $`A_k`$, which equals $`\Pi_{k+1}`$ on the input subspace. On a fully antisymmetric $`k+1`$-register vector, every negative transposition in $`\mathrm{SELECT}_k`$ acts as the identity. Hence
 
 ```math
 B_k\bigl(|0\rangle\otimes\Pi_{k+1}|\psi\rangle\bigr)
@@ -331,11 +331,11 @@ Measuring the individual nonzero ancilla labels, or omitting the failure correct
 
 ### Lemma 2: a uniform growth probability below the true rank
 
-Let $`V=\operatorname{range}P_j`$ have dimension $`r_j`$. For any current state $`\omega`$ on $`\wedge^kV`$ and any independent incoming $`\tau_j\ge wP_j`$, if $`k\lt r_j`$ then
+Let $`V=\mathrm{range}P_j`$ have dimension $`r_j`$. For any current state $`\omega`$ on $`\wedge^kV`$ and any independent incoming $`\tau_j\ge wP_j`$, if $`k\lt r_j`$ then
 
 ```math
 \Pr(\text{growth})
-=\operatorname{Tr}\!\left[(\omega\otimes\tau_j)\Pi_{k+1}\right]
+=\mathrm{Tr}\!\left[(\omega\otimes\tau_j)\Pi_{k+1}\right]
 \ge w\frac{r_j-k}{k+1}
 \ge\frac{w}{r+1}.
 ```
@@ -345,7 +345,7 @@ At $`k=r_j`$, the growth probability is exactly zero.
 **Proof.** On $`V^{\otimes(k+1)}`$, partial trace of the antisymmetric projector satisfies
 
 ```math
-\operatorname{Tr}_{k+1}\Pi_{k+1}^{V}
+\mathrm{Tr}_{k+1}\Pi_{k+1}^{V}
 =\frac{r_j-k}{k+1}\Pi_k^{V}.
 ```
 

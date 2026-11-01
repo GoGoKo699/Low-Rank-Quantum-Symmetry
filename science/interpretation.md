@@ -4,13 +4,13 @@ The algorithm returns a symmetry group: a compact classical description of trans
 
 ## The information missing from a support-only description
 
-For a pure state, conjugation invariance means that a unitary maps its vector to a scalar phase. A mixed state may be invariant while its eigenvectors acquire different phases or rotate inside degenerate eigenspaces. Its symmetry need not appear as a unit-modulus matrix coefficient $`\operatorname{Tr}(\rho R(g))`$. [Related work](../references/related_work.md) explains the resulting limitation of existing strong-symmetry methods.
+For a pure state, conjugation invariance means that a unitary maps its vector to a scalar phase. A mixed state may be invariant while its eigenvectors acquire different phases or rotate inside degenerate eigenspaces. Its symmetry need not appear as a unit-modulus matrix coefficient $`\mathrm{Tr}(\rho R(g))`$. [Related work](../references/related_work.md) explains the resulting limitation of existing strong-symmetry methods.
 
 A canonical exterior-power state encodes a subspace without selecting an eigenbasis. For a rank-$`k`$ projector $`P`$ with orthonormal basis $`v_1,\ldots,v_k`$, its normalized top wedge is
 
 ```math
 |{\wedge P}\rangle=
-\frac1{\sqrt{k!}}\sum_{\pi\in S_k}\operatorname{sgn}(\pi)
+\frac1{\sqrt{k!}}\sum_{\pi\in S_k}\mathrm{sgn}(\pi)
 |v_{\pi(1)}\rangle\otimes\cdots\otimes|v_{\pi(k)}\rangle.
 ```
 
